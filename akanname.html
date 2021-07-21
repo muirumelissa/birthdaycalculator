@@ -52,32 +52,21 @@
 
 
 
-var dayofweek = new Date(dates); 
-var my  = dayofweek.getDay();
+       var dayofweek = new Date(dates); 
+       var my  = dayofweek.getDay();
 
 
-if (my == 6) {
+       if (my == 6) {
 
-	var myday = 0 ;
+	   var myday = 0 ;
 
-}else
-{
+    }else
+    {
 
-	var myday  = my + 1;
-}
-
-
-
-
-
-
-var dayName = weekdays[myday];
-
-
-
-
-
-if(dayName == 'Sunday' && resul == 'male'){
+	   var myday  = my + 1;
+    }
+       var dayName = weekdays[myday];
+       if(dayName == 'Sunday' && resul == 'male'){
 
 document.getElementById('name').innerHTML = (maleNames[0]);
 
